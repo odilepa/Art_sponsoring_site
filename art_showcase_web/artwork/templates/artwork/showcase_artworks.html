@@ -1,0 +1,9 @@
+{% if artwork_list %}
+    <ul>
+    {% for artwork in artwork_list %}
+        <li><a href="/artworks/{{ artwork.id }}/">{{ artwork.title }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No artworks are available.</p>
+{% endif %}
